@@ -27,7 +27,7 @@ public class tab2Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
        View view = inflater.inflate(R.layout.fragment2,container,false);
 
-        btrTEST = (Button) view.findViewById(R.id.button2);
+        //btrTEST = (Button) view.findViewById(R.id.button2);
 
         ListAdapter myListAdapter = new CustomAdapter2(getContext(), exercisesList);
         lvTEST = (ListView) view.findViewById(R.id.listview2);

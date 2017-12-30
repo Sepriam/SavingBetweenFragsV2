@@ -17,10 +17,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.widget.Button;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Button btnMain;
 
     private static final String TAG = "MainActivity";
 
@@ -28,12 +32,16 @@ public class MainActivity extends AppCompatActivity {
 
     private ViewPager mViewPager;
 
+    ArrayList<String> checkedExercisesArray = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //commit dis
+        //Merge button with it's source in XML
+        //---------------------- Need to create a method here that displays all currently displayed items in a list.
+        btnMain = (Button) findViewById(R.id.buttonMain);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
